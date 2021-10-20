@@ -39,8 +39,8 @@ After joining our free web app you will have access to hundreds of like minded a
 
 React
 
-Firebase
-
 Material
 
+MongoDB
 
+Heroku
