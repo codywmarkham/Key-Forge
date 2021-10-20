@@ -34,3 +34,13 @@ After joining our free web app you will have access to hundreds of like minded a
 
 > **WHEN** User clicks own profile page  <br> > **THEN** they are shown a selected avatar for them and a profile page with there content and submissions
 
+
+# Tech
+
+React
+
+Firebase
+
+Material
+
+
