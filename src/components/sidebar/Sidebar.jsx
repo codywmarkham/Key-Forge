@@ -1,6 +1,7 @@
 import "./sidebar.css"
 import {RssFeed, Publish, FolderSpecial, Event, People} from "@material-ui/icons"
-
+import {Users} from "../../dummyData";
+import Friend from "../friend/Friend";
 
 export default function Sidebar() {
     return (
@@ -31,86 +32,9 @@ export default function Sidebar() {
                 </ul>
                 <hr className="sidebarHr"/>
                 <ul className="sidebarFriendList">
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className="sidebarFriendImg" src="/assets/image0.jpg" alt=""/>
-                        <span className="sidebarFriendName">Autumn Markham</span>
-                    </li>
+                      {Users.map((u)=>(
+                        <Friend key={u.id} user={u}/>
+                      ))}
                 </ul>
             </div>
         </div>
