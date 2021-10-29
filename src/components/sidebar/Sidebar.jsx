@@ -1,7 +1,7 @@
 import "./sidebar.css"
 import {RssFeed, Publish, FolderSpecial, Event, People} from "@material-ui/icons"
 import {Users} from "../../dummyData";
-import Friend from "../friend/Friend";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function Sidebar() {
     return (
@@ -33,7 +33,7 @@ export default function Sidebar() {
                 <hr className="sidebarHr"/>
                 <ul className="sidebarFriendList">
                       {Users.map((u)=>(
-                        <Friend key={u.id} user={u}/>
+                        <CloseFriend key={u.id} user={u}/>
                       ))}
                 </ul>
             </div>
