@@ -5,7 +5,7 @@ export default function Topbar() {
         <div className="topbarContainer">
             <div className="topbarLeft">
                 <span className="logo">KeyForge</span>
-                <VpnKeyTwoTone/>
+                <VpnKeyTwoTone className="topbarLeftIcon"/>
                 
             </div>
             <div className="topbarCenter">

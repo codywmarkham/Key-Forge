@@ -54,6 +54,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: white;
 
 }
 
@@ -94,4 +95,8 @@ cursor: pointer;
     border-radius: 50%;
     object-fit:  cover;
     cursor: pointer;
+}
+
+.topbarLeftIcon{
+    margin-left: 3px;
 }
